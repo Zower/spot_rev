@@ -1,0 +1,19 @@
+[package]
+name = "spot_rev_r"
+version = "0.1.0"
+edition = "2021"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.21.2"
+dotenv = "0.15.0"
+isahc = { version = "1.7.2", features = ["json"] }
+itertools = "0.11.0"
+serde = { version = "1.0.164", features = ["derive"] }
+serde_json = "1.0.99"
+tokio = { version = "1.28.0", features = ["full"] }
+tokio-cron-scheduler = "0.9.4"
+tracing = "0.1.37"
+tracing-subscriber = "0.3.17"
