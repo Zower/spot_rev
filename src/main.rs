@@ -50,7 +50,7 @@ async fn do_work() -> Result<(), Box<dyn std::error::Error>> {
         }
     };
 
-    info!("Token acquired, {}, {}", token.access_token, token.scope);
+    info!("Token acquired successfully");
 
     match reset_reversed(&client, &token.access_token, &to).await {
         Ok(_) => info!("Reversed reset successfully"),
