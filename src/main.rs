@@ -199,7 +199,6 @@ async fn get_token(client: &HttpClient) -> Result<AccessToken, Box<dyn std::erro
         .as_bytes(),
     );
 
-    // TODO client id and secret
     let request = Request::post("https://accounts.spotify.com/api/token")
         .header("Content-Type", "application/x-www-form-urlencoded")
         .header("Authorization", format!("Basic {encoded}"))
